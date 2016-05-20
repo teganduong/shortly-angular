@@ -1,5 +1,17 @@
 angular.module('shortly.shorten', [])
 
 .controller('ShortenController', function ($scope, $location, Links) {
-  // Your code here
+  $scope.link = {};
+
+  $scope.addLink = function() {
+    Links.addOne($scope.link)
+    .then(function() {
+      // console.log('this is link =====================>', link);
+      console.log('successfully added link!');
+    })
+    .catch(function() {
+      console.log('error in adding link');
+    });
+  };
 });
+
