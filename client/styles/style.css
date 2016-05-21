@@ -4,7 +4,7 @@ body {
   font-family: arial, sans-serif;
 }
 
-a {
+a, .signout {
   color: #333;
   font-size: 14px;
   text-decoration: none;
