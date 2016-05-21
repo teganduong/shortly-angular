@@ -31,7 +31,7 @@ h1 {
   float: left;
 }
 
-.navigation li a {
+.navigation li a, .signout {
   width: 100px;
   height: 20px;
   line-height: 20px;
@@ -40,7 +40,7 @@ h1 {
   text-align: center;
 }
 
-.navigation li a:hover {
+.navigation li a:hover, .signout:hover {
   background-color: #ddd;
 }
 
@@ -94,7 +94,7 @@ h1 {
 }
 
 form {
-  margin: 10px;
+  margin: 15px;
 }
 
 input {

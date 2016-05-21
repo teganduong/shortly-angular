@@ -3,12 +3,14 @@
   <ul>
     <li><a href='#/links'>Links</a></li>
     <li><a href='#/shorten'>Shorten Links</a></li>    
-    <li ng-click='signout()'>Logout</li>  
+    <li class="signout" ng-click='signout()'>Logout</li>  
   </ul>
   </div>
 
- <div>
-  <input type='text' placeholder="Filter search" ng-model="query[queryBy]">
+<div>
+  <form>
+    <input type='text' placeholder="Filter search" ng-model="query[queryBy]" />
+  </form>
 </div>
   <div class="link" ng-repeat="link in data.links | filter:query | orderBy:'-visits'">
     <span>
