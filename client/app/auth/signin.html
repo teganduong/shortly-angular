@@ -1,9 +1,9 @@
 <div id='signin'>
   <h1>signin</h1>
   <form name="signinForm" ng-submit='signin()'>
-    <input name="username" type='text' ng-model='user.username' required>
+    <input name="username" type='text' ng-model='user.username' required novalidate>
     <div ng-show="signinForm.username.$invalid && !signinForm.username.$pristine">Your username is required.</div>
-    <input name="password" type="password" ng-model='user.password' required>
+    <input name="password" type="password" ng-model='user.password' required novalidate>
     <div ng-show="signinForm.password.$invalid && !signinForm.password.$pristine">Your password is required.</div>
 
     <button>signin</button>
