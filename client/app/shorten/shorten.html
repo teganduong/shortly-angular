@@ -1,6 +1,19 @@
 <div id='container'>
-<!-- Your code here -->
+ <div class="navigation">
+  <ul>
+    <li><a href='#/links' class>Links</a></li>
+    <li><a href='#/shorten' class>Shorten Links</a></li>    
+  </ul>
+  </div>
 
+  <div>
+    <form ng-submit='addLink()'>
+      <input type='url' ng-model='link.url'>
+      <button type='submit'>Add</button>
+    </form>
+    <!-- <img class='spinner' src='/spiffygif_46x46.gif'> -->
+    <div class='message'></div>
+  </div>
 </div>
 
 
