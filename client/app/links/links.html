@@ -9,7 +9,7 @@
  <div>
   <input type='text' placeholder="Filter search" ng-model="query[queryBy]">
 </div>
-  <div class="link" ng-repeat="link in data.links | filter:query">
+  <div class="link" ng-repeat="link in data.links | filter:query | orderBy:'-visits'">
     <span>
       <img ng-src='/assets/redirect_icon.png'/>
       <div class='visits'><span class='count'>{{link.visits}}</span>Visits</div>
